@@ -12,7 +12,7 @@ gdown==3.12.2 \
 idna==2.10; python_version >= "2.7" and python_full_version < "3.0.0" or python_full_version >= "3.5.0" \
     --hash=sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0 \
     --hash=sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6
-numpy==1.19.2; python_version >= "3.7" and python_version < "4.0" and sys_platform == "linux" and python_full_version >= "3.6.2" \
+numpy==1.20.1; python_version >= "3.7" and python_version < "4.0" and sys_platform == "linux" and python_full_version >= "3.6.2" \
     --hash=sha256:ae61f02b84a0211abb56462a3b6cd1e7ec39d466d3160eb4e1da8bf6717cdbeb \
     --hash=sha256:65410c7f4398a0047eea5cca9b74009ea61178efd78d1be9847fac1d6716ec1e \
     --hash=sha256:2d7e27442599104ee08f4faed56bb87c55f8b10a5494ac2ead5c98a4b289e61f \
