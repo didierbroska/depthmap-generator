@@ -7,8 +7,8 @@ import argparse
 import logging
 import os
 
-from depthmap_generator import utils
-from depthmap_generator.depth import Depthmap
+from . import utils
+from .depth import Depthmap
 
 DEFAULT_MODEL_PATH = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
