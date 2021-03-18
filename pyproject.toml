@@ -1,14 +1,20 @@
 [tool.poetry]
 name = "depthmap-generator"
-version = "0.1.0"
+version = "0.2.0"
 description = "Depthmap evaluation from pictures with MiDaS"
 authors = ["Didier Bröska <didier.broska@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-torch = {version = "^1.8.0", python = "^3.7", platform = "linux"}
-torchvision = {version = "^0.9.0", python = "^3.7", platform = "linux"}
+torch = [
+  {version = "^1.8.0", python = "^3.7", platform = "linux"},
+  {version = "^1.8.0", python = "^3.7", platform = "win32"}
+]
+torchvision = [
+  {version = "^0.9.0", python = "^3.7", platform = "linux"},
+  {version = "^0.9.0", python = "^3.7", platform = "win32"}
+]
 gdown = "^3.12.2"
 opencv-python = "^4.5.1"
 
@@ -21,6 +27,9 @@ isort = "^5.7.0"
 pytest-cov = "^2.11.1"
 safety = "^1.10.3"
 mkdocs = "^1.1.2"
+
+[tool.poetry.scripts]
+depthmap-generator = "depthmap_generator.cli:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
